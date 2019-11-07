@@ -25,15 +25,15 @@ If it is a critical issue, or involves sensitive information please
 
 - [How to perform recurring payments](#how-to-perform-recurring-payments)
   * [Vipps screenshots](#vipps-screenshots)
-  * [Step 1: Draft an agreement](#step-1--draft-an-agreement)
+  * [Step 1: Draft an agreement](#step-1-draft-an-agreement)
     + [Initial charge](#initial-charge)
     + [Campaigns](#campaigns)
-  * [Step 2: Retrieve the approved agreement](#step-2--retrieve-the-approved-agreement)
+  * [Step 2: Retrieve the approved agreement](#step-2-retrieve-the-approved-agreement)
     + [Pausing an agreement](#pausing-an-agreement)
-  * [Step 3: Create a charge](#step-3--create-a-charge)
+  * [Step 3: Create a charge](#step-3-create-a-charge)
     + [Charge Title](#charge-title)
     + [Charge retries](#charge-retries)
-  * [Step 4: Manage charges and agreements](#step-4--manage-charges-and-agreements)
+  * [Step 4: Manage charges and agreements](#step-4-manage-charges-and-agreements)
     + [Agreement states](#agreement-states)
     + [Charge states](#charge-states)
     + [Updating an Agreement](#updating-an-agreement)
@@ -247,7 +247,7 @@ single `MONTH` period would be in place. If this limit becomes a hindrance the a
 ### Charge Title
 The title of the charge shown to a user in the Vipps app is in the format `{agreement.ProductName} - {charge.description}`. For example, with the charge below, and the *Premier League* agreement, the app title would read `Premier League subscription - October`
 
-**NOTE:** The charges need to have a due date at least 6 days in the future.
+**NOTE:** The charges need to have a due date at least 2 days in the future. However for UX purposes we recommend at least 6.
 
 [`POST:/agreements/{agreementId}/charges`](https://vippsas.github.io/vipps-recurring-api/#/Charge%20Controller/createCharge)
 ```json
