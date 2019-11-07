@@ -39,7 +39,7 @@ If it is a critical issue, or involves sensitive information please
     + [Updating an Agreement](#updating-an-agreement)
 - [HTTP responses](#http-responses)
 - [Authentication and authorization - API access token](#authentication-and-authorization---api-access-token)
-- [Questions?](#questions-)
+- [Questions?](#questions)
 
 # How to perform recurring payments
 <img src="./images/VippsRecurringMerchantFlow.svg">
