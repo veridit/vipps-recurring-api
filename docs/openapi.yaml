@@ -80,9 +80,16 @@ paths:
         - name: status
           in: query
           required: false
-          description: Filter by status
+          description: Filter by status. Defaults to ACTIVE if not specified
           schema:
             $ref: "#/components/schemas/AgreementStatus"
+        - name: createdAfter
+          in: query
+          required: false
+          description: Filter by time of creation (epoch milliseconds). Should be used to limit the number of agreements you fetch.
+          schema:
+            type: integer
+            example: 1609459200000
         - $ref: "#/components/parameters/Vipps-System-Name"
         - $ref: "#/components/parameters/Vipps-System-Version"
         - $ref: "#/components/parameters/Vipps-System-Plugin-Name"
